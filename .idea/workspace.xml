@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152b449a-b64d-4d09-bdac-3e57bd55540a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/assets/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ec33c82e-6cbf-463b-8dac-13fc4f15878f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/controller/pk/BotInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/controller/pk/BotInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/新建 文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/acapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/acapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/acapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +28,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2VZRDcVIEiIEqoUXk86sUKNkNx5" />
+  <component name="ProjectId" id="2VhAjCjG4Gx1FBH9qAG3COgG9dC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,17 +62,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="152b449a-b64d-4d09-bdac-3e57bd55540a" name="Changes" comment="" />
-      <created>1695041499725</created>
+      <changelist id="ec33c82e-6cbf-463b-8dac-13fc4f15878f" name="Changes" comment="" />
+      <created>1695278071291</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1695041499725</updated>
-=======
-      <updated>1695033895469</updated>
-      <workItem from="1695033898195" duration="305000" />
-      <workItem from="1695035678680" duration="3415000" />
->>>>>>> 7b3fa7a2a8a6a6cad3dcb30dc0e8caa299969b74
+      <updated>1695278071291</updated>
     </task>
     <servers />
   </component>

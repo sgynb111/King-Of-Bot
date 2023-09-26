@@ -1,5 +1,5 @@
 <template>
- <div class="container">
+ <div class="container content-filed">
         <div class="card">
             <div class="card-body">
                 <slot>
@@ -14,6 +14,6 @@
 
 </script>
 
-<style>
+<style scoped>
 
 </style>

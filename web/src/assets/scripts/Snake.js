@@ -37,7 +37,7 @@ export  class Snake extends AcGameObject{
             [-1,-1],
             [-1,1],
             [1,1],
-            [1,-1],
+            [-1,1],
         ];
     }
 
@@ -61,7 +61,7 @@ export  class Snake extends AcGameObject{
     next_step(){//将蛇的状态变为走下一步
         const d = this.direction;
         this.next_cell = new Cell(this.cells[0].r + this.dr[d],this.cells[0].c + this.dc[d]);
-        this.
+        this.eye_direction = d;
         this.direction = -1;//清空操作
         this.status = "move";
         this.step++;
@@ -149,7 +149,7 @@ export  class Snake extends AcGameObject{
             const eye_x = (this.cells[0].x + this.eye_dx[this.eye_direction][i] * 0.15) * L;
             const eye_y = (this.cells[0].y + this.eye_dy[this.eye_direction][i] * 0.15) * L;
             ctx.beginPath();
-            ctx.arc(eye_x, eye_y, L * 0.05, 0, Math.PI * 2);
+            ctx.arc(eye_x,eye_y,L * 0.05,0,Math.PI * 2);
             ctx.fill();
         }
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="kob@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1029,35 +1029,5 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="297" parent="289" name="user">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <column id="298" parent="297" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="299" parent="297" name="username">
-      <DataType>varchar(100)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="300" parent="297" name="password">
-      <DataType>varchar(100)|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <column id="301" parent="297" name="photo">
-      <DataType>varchar(1000)|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <index id="302" parent="297" name="id">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="303" parent="297" name="id">
-      <UnderlyingIndexName>id</UnderlyingIndexName>
-    </key>
   </database-model>
 </dataSource>

@@ -1045,5 +1045,9 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DataType>varchar(100)|0s</DataType>
       <Position>3</Position>
     </column>
+    <column id="301" parent="297" name="photo">
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>4</Position>
+    </column>
   </database-model>
 </dataSource>

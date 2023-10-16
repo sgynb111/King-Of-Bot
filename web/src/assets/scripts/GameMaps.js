@@ -3,11 +3,12 @@ import { Snake } from "./Snake";
 import { Wall } from "./Wall";
 
 export class GameMap extends AcGameObject {
-    constructor(ctx/*画布*/, parent/*画布的父元素*/) {
+    constructor(ctx/*画布*/, parent/*画布的父元素*/,store) {
         super();
 
         this.ctx = ctx;
         this.parent = parent;
+        this.store = store;
         this.L = 0; //一个单位的长度（绝对距离）
 
         this.rows = 13;//高13
@@ -16,65 +17,15 @@ export class GameMap extends AcGameObject {
         this.inner_walls_count = 20;//地图内部障碍20个
         this.walls = [];
 
-
         this.snakes = [
             new Snake({id: 0,color: "#4676EA",r: this.rows - 2,c: 1},this),
             new Snake({id: 1,color: "#F94847",r: 1,c: this.cols - 2},this)
         ];
     }
 
-    check_connectivity(g, sx, sy, tx, ty) {//查看地图是否连通（两蛇能够相交）
-        if (sx == tx && sy == ty) return true;//如果起点等于终点则连通
-        g[sx][sy] = true;//将当前位置（起点）标记为已经走过
-
-        let dx = [-1, 0, 1, 0], dy = [0, 1, 0, -1];//两个数组，记录为上下左右方向的偏移量
-        for (let i = 0; i < 4; i ++ ) {//遍历4个方向
-            let x = sx + dx[i], y = sy + dy[i];//当前位置设为下一个位置
-            if (!g[x][y] && this.check_connectivity(g, x, y, tx, ty))//当前位置没撞墙且下一个位置也没撞墙，返回连通
-                return true;
-        }
-
-        return false;
-    }
 
     create_walls() {//创建墙
-        const g = [];//储存有没有墙
-        for (let r = 0; r < this.rows; r ++ ) {//全部设为没有墙
-            g[r] = [];
-            for (let c = 0; c < this.cols; c ++ ) {
-                g[r][c] = false;
-            }
-        }
-
-        // 给四周加上障碍物
-        for (let r = 0; r < this.rows; r ++ ) {//添加行的围墙
-            g[r][0] = g[r][this.cols - 1] = true;
-        }
-
-        for (let c = 0; c < this.cols; c ++ ) {//添加列的围墙
-            g[0][c] = g[this.rows - 1][c] = true;
-        }
-
-        // 创建随机障碍
-        // 为了游戏公平，使游戏地图中心对称
-        for (let i = 0; i < this.inner_walls_count / 2; i ++ ) {//遍历总障碍的一半
-            for (let j = 0; j < 1000; j ++ ) {//随机1000次防止位置重复
-                let r = parseInt(Math.random() * this.rows);//随机行
-                let c = parseInt(Math.random() * this.cols);//随机列
-                if (g[r][c] || g[this.rows - 1 -r][this.cols - 1 - c]) continue;//如果当前位置有墙则重新随机
-                if (r == this.rows - 2/*起点横坐标*/ && c == 1 || r == 1 && c == this.cols - 2/*起点纵坐标*/)//如果当前位置是蛇的初始位置则重新随机
-                    continue;
-
-                g[r][c] = g[this.rows - 1 -r][this.cols - 1 - c] = true; //当前位置设为有墙
-                break;//画下一个墙
-            }
-        }
-
-
-        const copy_g = JSON.parse(JSON.stringify(g));//深拷贝墙的布尔数组
-        if (!this.check_connectivity(copy_g, this.rows - 2, 1, 1, this.cols - 2))//地图是不连通则返回false
-            return false;
-
+        const g = this.store.state.pk.gamemap;
         //遍历布尔数组，创建所有墙的对象
         for (let r = 0; r < this.rows; r ++ ) {
             for (let c = 0; c < this.cols; c ++ ) {
@@ -83,8 +34,6 @@ export class GameMap extends AcGameObject {
                 }
             }
         }
-
-        return true;//地图是连通的则返回true
     }
 
 
@@ -108,9 +57,7 @@ export class GameMap extends AcGameObject {
     }
 
     start() {
-        for (let i = 0; i < 1000; i ++ ) //创建地图
-            if (this.create_walls())
-                break;
+        this.create_walls();
         this.add_listening_events();
     }
 

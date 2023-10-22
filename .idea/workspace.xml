@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c8d082-b5f1-4131-908d-29238632513b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d59e6f7a-da5a-43e6-bdc4-c9c17e4bfcd8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d59e6f7a-da5a-43e6-bdc4-c9c17e4bfcd8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/service/impl/user/account/RegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/service/impl/user/account/RegisterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/NavBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/store/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/store/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/user/account/UserAccountLoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/user/account/UserAccountLoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/user/account/UserAccountRegisterView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/user/account/UserAccountRegisterView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +111,19 @@
       <updated>1695819145881</updated>
       <workItem from="1696943497900" duration="5097000" />
       <workItem from="1697034043359" duration="4224000" />
-      <workItem from="1697038316864" duration="6526000" />
+      <workItem from="1697038316864" duration="8424000" />
+      <workItem from="1697079967710" duration="1416000" />
+      <workItem from="1697081859082" duration="5877000" />
+      <workItem from="1697090757903" duration="587000" />
+      <workItem from="1697107823155" duration="1618000" />
+      <workItem from="1697117778310" duration="445000" />
+      <workItem from="1697343586901" duration="1293000" />
+      <workItem from="1697699256830" duration="533000" />
+      <workItem from="1697702140410" duration="902000" />
+      <workItem from="1697793680882" duration="14000" />
+      <workItem from="1697872027142" duration="56000" />
+      <workItem from="1697875600585" duration="12000" />
+      <workItem from="1697985892661" duration="24000" />
     </task>
     <servers />
   </component>

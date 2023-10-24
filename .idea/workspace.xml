@@ -4,40 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="e2c8d082-b5f1-4131-908d-29238632513b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/App.vue" afterDir="false" />
-=======
-    <list default="true" id="58d1c96d-6282-4779-9e54-873ec6a8e94a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/config/filter/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/consumer/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/consumer/utils/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/consumer/utils/JwtAuthentication.java" afterDir="false" />
+    <list default="true" id="84e39c0a-1b86-4b10-b707-0c3e3ecf8b2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/service/impl/user/bot/AddServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/service/impl/user/bot/AddServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/service/impl/user/bot/UpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/kob/backend/service/impl/user/bot/UpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/scripts/GameMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/assets/scripts/GameMaps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/GameMap.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/GameMap.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/pk/PkIndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/pk/PkIndexView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/user/bot/UserBotIndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/user/bot/UserBotIndexView.vue" afterDir="false" />
->>>>>>> d7479a0ed5602a3251b82957114f4604d342428c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,70 +21,63 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2Wn1wny30dDN9xkrxZSvFbOmIrX" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XC16mkJrtZSl0V4Pk6pXFPiMj4" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kob.backend.BackendApplication" />
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kob.backend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kob.backend.BackendApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BackendApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="58d1c96d-6282-4779-9e54-873ec6a8e94a" name="Changes" comment="" />
-      <created>1697353772382</created>
+      <changelist id="84e39c0a-1b86-4b10-b707-0c3e3ecf8b2f" name="Changes" comment="" />
+      <created>1698118077243</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1695819145881</updated>
-      <workItem from="1696943497900" duration="5097000" />
-      <workItem from="1697034043359" duration="4224000" />
-      <workItem from="1697038316864" duration="8424000" />
-      <workItem from="1697079967710" duration="1416000" />
-      <workItem from="1697081859082" duration="5877000" />
-      <workItem from="1697090757903" duration="587000" />
-      <workItem from="1697107823155" duration="1618000" />
-      <workItem from="1697117778310" duration="445000" />
-      <workItem from="1697343586901" duration="1293000" />
-      <workItem from="1697699256830" duration="533000" />
-      <workItem from="1697702140410" duration="902000" />
-      <workItem from="1697793680882" duration="14000" />
-      <workItem from="1697872027142" duration="56000" />
-      <workItem from="1697875600585" duration="12000" />
-      <workItem from="1697985892661" duration="24000" />
-=======
-      <updated>1697353772382</updated>
->>>>>>> d7479a0ed5602a3251b82957114f4604d342428c
+      <updated>1698118077243</updated>
+      <workItem from="1698118080710" duration="154000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

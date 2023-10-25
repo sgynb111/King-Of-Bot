@@ -1,11 +1,13 @@
 <template>
     <PlayGround v-if="$store.state.pk.status === 'playing'" />
     <MatchGround v-if="$store.state.pk.status === 'matching'" />
+    <ResultBoard v-if="$store.state.pk.loser != 'none'" />
 </template>
 
 <script>
 import PlayGround from '../../components/PlayGround.vue'
 import MatchGround from '../../components/MatchGround.vue'
+import ResultBoard from '../../components/ResultBoard.vue'
 import { onMounted, onUnmounted } from 'vue'
 import { useStore } from 'vuex'
 
@@ -13,11 +15,13 @@ export default {
     components: {
         PlayGround,
         MatchGround,
-
+        ResultBoard,
     },
     setup() {
         const store = useStore();
         const socketUrl = `ws://127.0.0.1:3000/websocket/${store.state.user.token}/`;
+        store.commit("updateLoser", "none");
+
 
         let socket = null;
         onMounted(() => {
@@ -42,7 +46,25 @@ export default {
                     setTimeout(() => {
                         store.commit("updateStatus", "playing");
                     }, 200);
-                    store.commit("updateGamemap", data.gamemap);
+                    store.commit("updateGame", data.game);
+                } else if (data.event === "move") {
+                    console.log(data);
+                    const game = store.state.pk.gameObject;
+                    const [snake0, snake1] = game.snakes;
+                    snake0.set_direction(data.a_direction);
+                    snake1.set_direction(data.b_direction);
+                } else if (data.event === "result") {
+                    console.log(data);
+                    const game = store.state.pk.gameObject;
+                    const [snake0, snake1] = game.snakes;
+
+                    if (data.loser === "all" || data.loser === "A") {
+                        snake0.status = "die";
+                    }
+                    if (data.loser === "all" || data.loser === "B") {
+                        snake1.status = "die";
+                    }
+                    store.commit("updateLoser", data.loser);
                 }
             }
 
@@ -60,10 +82,4 @@ export default {
 </script>
 
 <style scoped>
-div.user-color {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-}
 </style>
